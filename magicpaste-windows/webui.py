@@ -101,7 +101,7 @@ class Api:
         self._ui.state.update_settings(image_quality=str(value))
 
     def open_github(self):
-        webbrowser.open("https://github.com/RedOrionStudio/magicpaste")
+        webbrowser.open("https://github.com/Red-Orion-Studio/magicpaste")
 
     def open_studio(self):
         webbrowser.open("https://www.redorionstudio.com")

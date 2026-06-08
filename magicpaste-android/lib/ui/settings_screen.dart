@@ -201,7 +201,7 @@ class _SettingsScreenState extends State<SettingsScreen>
                   label: 'GitHub',
                   trailing: GestureDetector(
                     onTap: () => launchUrl(
-                      Uri.parse('https://github.com/RedOrionStudio/magicpaste'),
+                      Uri.parse('https://github.com/Red-Orion-Studio/magicpaste'),
                       mode: LaunchMode.externalApplication,
                     ),
                     child: const Row(

@@ -8,7 +8,7 @@ Thanks for your interest in contributing! MagicPaste is a small open-source proj
 
 ## Ways to contribute
 
-- **Report bugs** — open an [issue](https://github.com/RedOrionStudio/magicpaste/issues) with steps to reproduce, your Android version/OEM, and Windows version
+- **Report bugs** — open an [issue](https://github.com/Red-Orion-Studio/magicpaste/issues) with steps to reproduce, your Android version/OEM, and Windows version
 - **Test on other devices** — especially non-Xiaomi OEMs (Samsung, Pixel, OnePlus, Motorola)
 - **Fix bugs** — pick an open issue and submit a PR
 - **Improve translations** — EN and ES are included; adding more languages is welcome

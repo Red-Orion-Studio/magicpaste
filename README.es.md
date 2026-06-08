@@ -14,7 +14,7 @@ internet, sin nube — completamente local y de código abierto.
 > **Aviso beta:** MagicPaste está en beta temprana (v0.1.0). Ha sido probado en
 > Xiaomi (MIUI) — uno de los fabricantes Android más restrictivos con procesos en segundo plano
 > — por lo que debería funcionar bien en la mayoría de dispositivos. Si encuentras algún error,
-> por favor [abre un issue](https://github.com/RedOrionStudio/magicpaste/issues). 🙏
+> por favor [abre un issue](https://github.com/Red-Orion-Studio/magicpaste/issues). 🙏
 
 ---
 

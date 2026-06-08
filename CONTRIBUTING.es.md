@@ -8,7 +8,7 @@
 
 ## Cómo contribuir
 
-- **Reportar bugs** — abre un [issue](https://github.com/RedOrionStudio/magicpaste/issues) con los pasos para reproducirlo, tu versión de Android/fabricante y versión de Windows
+- **Reportar bugs** — abre un [issue](https://github.com/Red-Orion-Studio/magicpaste/issues) con los pasos para reproducirlo, tu versión de Android/fabricante y versión de Windows
 - **Probar en otros dispositivos** — especialmente OEMs distintos a Xiaomi (Samsung, Pixel, OnePlus, Motorola)
 - **Corregir bugs** — toma un issue abierto y envía un PR
 - **Mejorar traducciones** — EN y ES están incluidos; agregar más idiomas es bienvenido
