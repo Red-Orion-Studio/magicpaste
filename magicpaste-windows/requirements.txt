@@ -1,0 +1,6 @@
+pywin32; sys_platform == "win32"
+Pillow
+pystray
+zeroconf
+qrcode
+pywebview

@@ -1,0 +1,56 @@
+# ── IDE / tools ───────────────────────────────────────────────────────────────
+.claude/settings.json
+logcat.txt
+*.log
+
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+_testout.txt
+
+# PyInstaller artefacts (binaries, not the spec file)
+magicpaste-windows/build/
+magicpaste-windows/dist/
+
+# App runtime state (user data, not source)
+magicpaste-windows/state.json
+magicpaste-windows/history.json
+
+# ── Flutter / Android ─────────────────────────────────────────────────────────
+magicpaste-android/.dart_tool/
+magicpaste-android/.flutter-plugins
+magicpaste-android/.flutter-plugins-dependencies
+magicpaste-android/build/
+magicpaste-android/android/build/
+magicpaste-android/.idea/
+magicpaste-android/android/.gradle/
+magicpaste-android/android/local.properties
+magicpaste-android/ios/
+magicpaste-android/linux/
+magicpaste-android/macos/
+magicpaste-android/windows/
+magicpaste-android/web/
+*.iml
+
+# !! FIRMA — nunca subir al repo !!
+magicpaste-android/key.properties
+magicpaste-android/*.jks
+magicpaste-android/*.keystore
+
+# ── Node / Branding tools ─────────────────────────────────────────────────────
+branding/node_modules/
+branding/out/
+
+# ── OS ────────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── IDE ───────────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.suo
+*.user

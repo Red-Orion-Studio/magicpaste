@@ -1,0 +1,25 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8B5CF6"/>
+      <stop offset="1" stop-color="#7C3AED"/>
+    </linearGradient>
+  </defs>
+  <rect width="1024" height="1024" rx="224" fill="url(#bg)"/>
+
+  <!-- ears -->
+  <g transform="translate(470 520) rotate(-15)">
+    <rect x="-44" y="-300" width="88" height="320" rx="44" fill="#ffffff"/>
+    <rect x="-17" y="-262" width="34" height="244" rx="17" fill="#C4B5FD"/>
+  </g>
+  <g transform="translate(554 520) rotate(15)">
+    <rect x="-44" y="-300" width="88" height="320" rx="44" fill="#ffffff"/>
+    <rect x="-17" y="-262" width="34" height="244" rx="17" fill="#C4B5FD"/>
+  </g>
+
+  <!-- head -->
+  <circle cx="512" cy="624" r="156" fill="#ffffff"/>
+
+  <!-- sparkle -->
+  <path d="M770 300 L783 336 L819 349 L783 362 L770 398 L757 362 L721 349 L757 336 Z" fill="#ffffff"/>
+</svg>

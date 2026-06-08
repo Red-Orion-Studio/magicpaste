@@ -1,0 +1,18 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8B5CF6"/>
+      <stop offset="1" stop-color="#7C3AED"/>
+    </linearGradient>
+  </defs>
+  <rect width="1024" height="1024" rx="224" fill="url(#bg)"/>
+
+  <!-- magician top hat -->
+  <ellipse cx="512" cy="664" rx="252" ry="44" fill="#ffffff"/>
+  <path d="M362 650 L405 372 Q409 348 433 348 L591 348 Q615 348 619 372 L662 650 Z" fill="#ffffff"/>
+  <rect x="378" y="582" width="268" height="48" rx="6" fill="#6D28D9"/>
+
+  <!-- sparkles (4-point) -->
+  <path d="M726 266 L743 313 L790 330 L743 347 L726 394 L709 347 L662 330 L709 313 Z" fill="#ffffff"/>
+  <path d="M800 420 L809 443 L832 452 L809 461 L800 484 L791 461 L768 452 L791 443 Z" fill="#ffffff"/>
+</svg>

@@ -1,0 +1,103 @@
+17:47:49 INFO magicpaste.server: Listening on 0.0.0.0:49152
+17:47:49 INFO magicpaste: Listening on 0.0.0.0:49152
+17:47:49 DEBUG asyncio: Using proactor: IocpProactor
+17:47:51 INFO magicpaste.discovery: Advertised MagicPaste at 192.168.1.8:49152 via mDNS
+17:47:51 INFO magicpaste: MagicPaste ready. Pair your phone with 192.168.1.8:49152
+18:04:25 INFO magicpaste.server: Connection from 192.168.1.4:35714
+18:04:25 DEBUG magicpaste.server: Message PAIR_REQUEST from 192.168.1.4:35714 (13 bytes)
+18:04:25 INFO magicpaste.server: Paired with Android phone
+18:04:25 INFO magicpaste: Paired with Android phone
+18:04:25 INFO magicpaste.server: Connection from 192.168.1.4:35714 closed
+18:04:26 INFO magicpaste.server: Connection from 192.168.1.4:35716
+18:04:26 DEBUG magicpaste.server: Message PING from 192.168.1.4:35716 (0 bytes)
+18:04:26 INFO magicpaste.server: Connection from 192.168.1.4:35716 closed
+18:04:46 INFO magicpaste.server: Connection from 192.168.1.4:35718
+18:04:46 DEBUG magicpaste.server: Message IMAGE from 192.168.1.4:35718 (206105 bytes)
+18:04:46 DEBUG PIL.TiffImagePlugin: tag: ImageWidth (256) - type: long (4) - value: b'\x00\x00\x048'
+18:04:46 DEBUG PIL.TiffImagePlugin: tag: ImageLength (257) - type: long (4) - value: b'\x00\x00\t`'
+18:04:46 DEBUG PIL.TiffImagePlugin: tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+18:04:46 DEBUG PIL.TiffImagePlugin: tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00>'
+18:04:46 INFO magicpaste.server: Screenshot copied to clipboard (1080x2400)
+18:04:46 INFO magicpaste: Screenshot copied to clipboard (1080x2400)
+18:04:46 INFO magicpaste.server: Connection from 192.168.1.4:35718 closed
+18:04:48 INFO magicpaste.server: Connection from 192.168.1.4:35720
+18:04:48 DEBUG magicpaste.server: Message IMAGE from 192.168.1.4:35720 (669021 bytes)
+18:04:48 DEBUG PIL.TiffImagePlugin: tag: ImageWidth (256) - type: long (4) - value: b'\x00\x00\x048'
+18:04:48 DEBUG PIL.TiffImagePlugin: tag: ImageLength (257) - type: long (4) - value: b'\x00\x00\t`'
+18:04:48 DEBUG PIL.TiffImagePlugin: tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+18:04:48 DEBUG PIL.TiffImagePlugin: tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00>'
+18:04:49 INFO magicpaste.server: Screenshot copied to clipboard (1080x2400)
+18:04:49 INFO magicpaste: Screenshot copied to clipboard (1080x2400)
+18:04:49 INFO magicpaste.server: Connection from 192.168.1.4:35720 closed
+18:04:52 INFO magicpaste.server: Connection from 192.168.1.4:35722
+18:04:52 DEBUG magicpaste.server: Message IMAGE from 192.168.1.4:35722 (461041 bytes)
+18:04:52 DEBUG PIL.TiffImagePlugin: tag: ImageWidth (256) - type: long (4) - value: b'\x00\x00\x048'
+18:04:52 DEBUG PIL.TiffImagePlugin: tag: ImageLength (257) - type: long (4) - value: b'\x00\x00\t`'
+18:04:52 DEBUG PIL.TiffImagePlugin: tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+18:04:52 DEBUG PIL.TiffImagePlugin: tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00>'
+18:04:52 INFO magicpaste.server: Screenshot copied to clipboard (1080x2400)
+18:04:52 INFO magicpaste: Screenshot copied to clipboard (1080x2400)
+18:04:52 INFO magicpaste.server: Connection from 192.168.1.4:35722 closed
+18:06:13 INFO magicpaste.server: Connection from 192.168.1.4:35750
+18:06:13 DEBUG magicpaste.server: Message IMAGE from 192.168.1.4:35750 (796874 bytes)
+18:06:13 DEBUG PIL.TiffImagePlugin: tag: ImageWidth (256) - type: long (4) - value: b'\x00\x00\x048'
+18:06:13 DEBUG PIL.TiffImagePlugin: tag: ImageLength (257) - type: long (4) - value: b'\x00\x00\t`'
+18:06:13 DEBUG PIL.TiffImagePlugin: tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+18:06:13 DEBUG PIL.TiffImagePlugin: tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00>'
+18:06:13 INFO magicpaste.server: Screenshot copied to clipboard (1080x2400)
+18:06:13 INFO magicpaste: Screenshot copied to clipboard (1080x2400)
+18:06:14 INFO magicpaste.server: Connection from 192.168.1.4:35750 closed
+18:06:21 INFO magicpaste.server: Connection from 192.168.1.4:35752
+18:06:21 DEBUG magicpaste.server: Message IMAGE from 192.168.1.4:35752 (837805 bytes)
+18:06:21 DEBUG PIL.TiffImagePlugin: tag: ImageWidth (256) - type: long (4) - value: b'\x00\x00\x048'
+18:06:21 DEBUG PIL.TiffImagePlugin: tag: ImageLength (257) - type: long (4) - value: b'\x00\x00\t`'
+18:06:21 DEBUG PIL.TiffImagePlugin: tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+18:06:21 DEBUG PIL.TiffImagePlugin: tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00>'
+18:06:21 INFO magicpaste.server: Screenshot copied to clipboard (1080x2400)
+18:06:21 INFO magicpaste: Screenshot copied to clipboard (1080x2400)
+18:06:21 INFO magicpaste.server: Connection from 192.168.1.4:35752 closed
+18:06:27 INFO magicpaste.server: Connection from 192.168.1.4:35754
+18:06:27 DEBUG magicpaste.server: Message IMAGE from 192.168.1.4:35754 (646740 bytes)
+18:06:27 DEBUG PIL.TiffImagePlugin: tag: ImageWidth (256) - type: long (4) - value: b'\x00\x00\x048'
+18:06:27 DEBUG PIL.TiffImagePlugin: tag: ImageLength (257) - type: long (4) - value: b'\x00\x00\t`'
+18:06:27 DEBUG PIL.TiffImagePlugin: tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+18:06:27 DEBUG PIL.TiffImagePlugin: tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00>'
+18:06:27 INFO magicpaste.server: Screenshot copied to clipboard (1080x2400)
+18:06:27 INFO magicpaste: Screenshot copied to clipboard (1080x2400)
+18:06:27 INFO magicpaste.server: Connection from 192.168.1.4:35754 closed
+18:08:09 INFO magicpaste.server: Connection from 192.168.1.4:35834
+18:08:09 DEBUG magicpaste.server: Message IMAGE from 192.168.1.4:35834 (140856 bytes)
+18:08:09 DEBUG PIL.TiffImagePlugin: tag: ImageWidth (256) - type: long (4) - value: b'\x00\x00\x048'
+18:08:09 DEBUG PIL.TiffImagePlugin: tag: ImageLength (257) - type: long (4) - value: b'\x00\x00\t`'
+18:08:09 DEBUG PIL.TiffImagePlugin: tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+18:08:09 DEBUG PIL.TiffImagePlugin: tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00>'
+18:08:10 INFO magicpaste.server: Screenshot copied to clipboard (1080x2400)
+18:08:10 INFO magicpaste: Screenshot copied to clipboard (1080x2400)
+18:08:10 INFO magicpaste.server: Connection from 192.168.1.4:35834 closed
+18:08:25 INFO magicpaste.server: Connection from 192.168.1.4:35852
+18:08:25 DEBUG magicpaste.server: Message IMAGE from 192.168.1.4:35852 (147409 bytes)
+18:08:25 DEBUG PIL.TiffImagePlugin: tag: ImageWidth (256) - type: long (4) - value: b'\x00\x00\x048'
+18:08:25 DEBUG PIL.TiffImagePlugin: tag: ImageLength (257) - type: long (4) - value: b'\x00\x00\t`'
+18:08:25 DEBUG PIL.TiffImagePlugin: tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+18:08:25 DEBUG PIL.TiffImagePlugin: tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00>'
+18:08:25 INFO magicpaste.server: Screenshot copied to clipboard (1080x2400)
+18:08:25 INFO magicpaste: Screenshot copied to clipboard (1080x2400)
+18:08:25 INFO magicpaste.server: Connection from 192.168.1.4:35852 closed
+18:08:46 INFO magicpaste.server: Connection from 192.168.1.4:35872
+18:08:46 DEBUG magicpaste.server: Message IMAGE from 192.168.1.4:35872 (46451 bytes)
+18:08:46 DEBUG PIL.TiffImagePlugin: tag: ImageWidth (256) - type: long (4) - value: b'\x00\x00\x048'
+18:08:46 DEBUG PIL.TiffImagePlugin: tag: ImageLength (257) - type: long (4) - value: b'\x00\x00\t`'
+18:08:46 DEBUG PIL.TiffImagePlugin: tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+18:08:46 DEBUG PIL.TiffImagePlugin: tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00>'
+18:08:46 INFO magicpaste.server: Screenshot copied to clipboard (1080x2400)
+18:08:46 INFO magicpaste: Screenshot copied to clipboard (1080x2400)
+18:08:46 INFO magicpaste.server: Connection from 192.168.1.4:35872 closed
+18:09:10 INFO magicpaste.server: Connection from 192.168.1.4:35880
+18:09:10 DEBUG magicpaste.server: Message IMAGE from 192.168.1.4:35880 (448307 bytes)
+18:09:10 DEBUG PIL.TiffImagePlugin: tag: ImageWidth (256) - type: long (4) - value: b'\x00\x00\x048'
+18:09:10 DEBUG PIL.TiffImagePlugin: tag: ImageLength (257) - type: long (4) - value: b'\x00\x00\t`'
+18:09:10 DEBUG PIL.TiffImagePlugin: tag: Orientation (274) - type: short (3) - value: b'\x00\x01'
+18:09:10 DEBUG PIL.TiffImagePlugin: tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00>'
+18:09:10 INFO magicpaste.server: Screenshot copied to clipboard (1080x2400)
+18:09:10 INFO magicpaste: Screenshot copied to clipboard (1080x2400)
+18:09:10 INFO magicpaste.server: Connection from 192.168.1.4:35880 closed

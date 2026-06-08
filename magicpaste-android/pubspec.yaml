@@ -1,0 +1,78 @@
+name: magicpaste
+description: Automatically send Android screenshots to your Windows PC clipboard.
+publish_to: "none"
+version: 0.1.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+  flutter: ">=3.10.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+
+  # Media access (screenshots)
+  photo_manager: ^3.0.0
+
+  # Networking / WiFi info
+  network_info_plus: ^4.1.0
+
+  # mDNS discovery of the Windows PC
+  nsd: ^5.0.1
+
+  # Persistent background / foreground service
+  flutter_foreground_task: ^6.1.3
+
+  # Pairing via QR
+  qr_flutter: ^4.1.0
+  mobile_scanner: ^7.2.0
+
+  # Persist the paired PC address
+  shared_preferences: ^2.2.2
+
+  # Battery optimization exemption request
+  permission_handler: ^11.3.0
+
+  # Open GitHub link from Settings
+  url_launcher: ^6.2.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  # Generates branded native splash for Android 12+ (new SplashScreen API)
+  # and older versions. Run: dart run flutter_native_splash:create
+  flutter_native_splash: ^2.4.0
+  # Generates app launcher icons (incl. adaptive). Run:
+  #   dart run flutter_launcher_icons
+  flutter_launcher_icons: ^0.13.1
+
+# App launcher icon: full violet logo + adaptive (violet bg, white glyph fg).
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: "assets/branding/icon.png"
+  adaptive_icon_background: "#7C3AED"
+  adaptive_icon_foreground: "assets/branding/adaptive_fg.png"
+  min_sdk_android: 26
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/img/logo.png
+
+# Branded launch screen: full violet background with the white glyph.
+flutter_native_splash:
+  color: "#7C3AED"
+  color_dark: "#7C3AED"
+  image: assets/branding/logo_android12.png
+  android_12:
+    color: "#7C3AED"
+    color_dark: "#7C3AED"
+    image: assets/branding/logo_android12.png
+    icon_background_color: "#7C3AED"
+    icon_background_color_dark: "#7C3AED"
+  android: true
+  ios: false
+  web: false

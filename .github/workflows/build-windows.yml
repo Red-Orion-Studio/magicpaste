@@ -1,0 +1,44 @@
+name: Build Windows EXE
+
+on:
+  push:
+    branches: [main]
+    paths: ["magicpaste-windows/**", ".github/workflows/build-windows.yml"]
+  release:
+    types: [created]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+    defaults:
+      run:
+        working-directory: magicpaste-windows
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          pip install pyinstaller
+
+      - name: Run protocol tests
+        run: python test_protocol.py
+
+      - name: Build EXE
+        run: pyinstaller --onefile --windowed --name=MagicPaste magicpaste.py
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: magicpaste-windows
+          path: magicpaste-windows/dist/MagicPaste.exe
+
+      - name: Attach EXE to release
+        if: github.event_name == 'release'
+        uses: softprops/action-gh-release@v2
+        with:
+          files: magicpaste-windows/dist/MagicPaste.exe

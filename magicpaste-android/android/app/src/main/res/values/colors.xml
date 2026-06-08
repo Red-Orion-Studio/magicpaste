@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- MagicPaste brand -->
+    <color name="mp_base">#0D0D0F</color>
+    <color name="mp_violet">#7C3AED</color>
+    <color name="mp_violet_light">#A78BFA</color>
+	<color name="ic_launcher_background">#7C3AED</color>
+</resources>

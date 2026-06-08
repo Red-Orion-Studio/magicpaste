@@ -1,0 +1,20 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8B5CF6"/>
+      <stop offset="1" stop-color="#7C3AED"/>
+    </linearGradient>
+  </defs>
+  <rect width="1024" height="1024" rx="224" fill="url(#bg)"/>
+
+  <!-- clipboard board -->
+  <rect x="312" y="312" width="400" height="428" rx="44" fill="#ffffff"/>
+  <!-- clip tab -->
+  <rect x="442" y="280" width="140" height="64" rx="26" fill="#ffffff"/>
+  <rect x="476" y="296" width="72" height="26" rx="13" fill="#7C3AED"/>
+
+  <!-- magic sparkle on the board -->
+  <path d="M512 430 L538 500 L608 526 L538 552 L512 622 L486 552 L416 526 L486 500 Z" fill="#7C3AED"/>
+  <!-- subtle content line -->
+  <rect x="430" y="656" width="164" height="22" rx="11" fill="#DDD6FE"/>
+</svg>
