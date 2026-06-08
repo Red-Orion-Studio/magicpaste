@@ -2,6 +2,7 @@
 .claude/settings.json
 logcat.txt
 *.log
+*.log.err
 
 # ── Python ────────────────────────────────────────────────────────────────────
 __pycache__/
