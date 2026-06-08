@@ -2,7 +2,7 @@ name: Build Windows EXE
 
 on:
   push:
-    branches: [main]
+    branches: [master]
     paths: ["magicpaste-windows/**", ".github/workflows/build-windows.yml"]
   release:
     types: [created]
@@ -22,23 +22,35 @@ jobs:
           python-version: "3.11"
 
       - name: Install dependencies
-        run: |
-          pip install -r requirements.txt
-          pip install pyinstaller
+        run: pip install -r requirements.txt pyinstaller pytest
 
-      - name: Run protocol tests
-        run: python test_protocol.py
+      - name: Run tests
+        run: pytest tests/ -v
 
       - name: Build EXE
-        run: pyinstaller --onefile --windowed --name=MagicPaste magicpaste.py
+        run: pyinstaller magicpaste.spec
 
-      - uses: actions/upload-artifact@v4
+      - name: Install Inno Setup
+        if: github.event_name == 'release'
+        run: choco install innosetup --yes
+        shell: powershell
+
+      - name: Build installer
+        if: github.event_name == 'release'
+        run: '& "C:\Program Files (x86)\Inno Setup 6\ISCC.exe" installer.iss'
+        shell: powershell
+
+      - name: Upload EXE artifact
+        if: github.event_name != 'release'
+        uses: actions/upload-artifact@v4
         with:
           name: magicpaste-windows
           path: magicpaste-windows/dist/MagicPaste.exe
 
-      - name: Attach EXE to release
+      - name: Attach to release
         if: github.event_name == 'release'
         uses: softprops/action-gh-release@v2
         with:
-          files: magicpaste-windows/dist/MagicPaste.exe
+          files: |
+            magicpaste-windows/dist/MagicPaste.exe
+            magicpaste-windows/dist/MagicPaste-Setup-v0.1.0-beta.exe

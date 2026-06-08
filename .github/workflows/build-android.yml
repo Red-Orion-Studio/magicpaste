@@ -2,7 +2,7 @@ name: Build Android APK
 
 on:
   push:
-    branches: [main]
+    branches: [master]
     paths: ["magicpaste-android/**", ".github/workflows/build-android.yml"]
   release:
     types: [created]
@@ -11,9 +11,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: magicpaste-android
     steps:
       - uses: actions/checkout@v4
 
@@ -26,27 +23,49 @@ jobs:
         with:
           channel: stable
 
-      # Generate the android/ platform scaffolding (gradle, MainActivity, etc.)
-      # that we don't keep in the repo, then restore our custom manifest.
-      - name: Scaffold platform files
-        run: |
-          cp android/app/src/main/AndroidManifest.xml /tmp/MagicManifest.xml
-          flutter create --platforms=android --org com.magicpaste --project-name magicpaste .
-          cp /tmp/MagicManifest.xml android/app/src/main/AndroidManifest.xml
-
       - name: Get dependencies
+        working-directory: magicpaste-android
         run: flutter pub get
 
-      - name: Build APK
-        run: flutter build apk --release
+      - name: Run tests
+        working-directory: magicpaste-android
+        run: flutter test
 
-      - uses: actions/upload-artifact@v4
-        with:
-          name: magicpaste-android
-          path: magicpaste-android/build/app/outputs/flutter-apk/app-release.apk
+      # Signed release — only on GitHub Release events
+      - name: Decode keystore
+        if: github.event_name == 'release'
+        run: echo "${{ secrets.KEYSTORE_BASE64 }}" | base64 -d > "$GITHUB_WORKSPACE/magicpaste-android/magicpaste-release.jks"
+
+      - name: Create key.properties
+        if: github.event_name == 'release'
+        run: |
+          printf 'storePassword=%s\nkeyPassword=%s\nkeyAlias=%s\nstoreFile=%s\n' \
+            "${{ secrets.STORE_PASSWORD }}" \
+            "${{ secrets.KEY_PASSWORD }}" \
+            "${{ secrets.KEY_ALIAS }}" \
+            "$GITHUB_WORKSPACE/magicpaste-android/magicpaste-release.jks" \
+            > "$GITHUB_WORKSPACE/magicpaste-android/key.properties"
+
+      - name: Build signed release APK
+        if: github.event_name == 'release'
+        working-directory: magicpaste-android
+        run: flutter build apk --release
 
       - name: Attach APK to release
         if: github.event_name == 'release'
         uses: softprops/action-gh-release@v2
         with:
           files: magicpaste-android/build/app/outputs/flutter-apk/app-release.apk
+
+      # Debug build for push/dispatch — no signing needed
+      - name: Build debug APK
+        if: github.event_name != 'release'
+        working-directory: magicpaste-android
+        run: flutter build apk --debug
+
+      - name: Upload debug artifact
+        if: github.event_name != 'release'
+        uses: actions/upload-artifact@v4
+        with:
+          name: magicpaste-android-debug
+          path: magicpaste-android/build/app/outputs/flutter-apk/app-debug.apk
