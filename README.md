@@ -7,8 +7,8 @@
 
 **Take a screenshot on Android → press Ctrl+V on your Windows PC. That's it.**
 
-[![Download Windows](https://img.shields.io/badge/Windows-Download%20Installer-7C3AED?logo=windows&logoColor=white)](https://github.com/Red-Orion-Studio/magicpaste/releases/latest/download/MagicPaste-Setup-v0.1.0-beta.exe)
-[![Download Android](https://img.shields.io/badge/Android-Download%20APK-7C3AED?logo=android&logoColor=white)](https://github.com/Red-Orion-Studio/magicpaste/releases/latest/download/app-release.apk)
+[![Download Windows](https://img.shields.io/badge/Windows-Download%20Installer-7C3AED?logo=windows&logoColor=white)](https://github.com/Red-Orion-Studio/magicpaste/releases/download/v0.1.0/MagicPaste-Setup-v0.1.0-beta.exe)
+[![Download Android](https://img.shields.io/badge/Android-Download%20APK-7C3AED?logo=android&logoColor=white)](https://github.com/Red-Orion-Studio/magicpaste/releases/download/v0.1.0/app-release.apk)
 
 MagicPaste automatically detects new screenshots on your Android phone and sends
 them straight to your Windows clipboard over your local WiFi. No accounts, no
