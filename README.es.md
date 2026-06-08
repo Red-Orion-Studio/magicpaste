@@ -7,6 +7,9 @@
 
 **Toma una captura de pantalla en Android → presiona Ctrl+V en tu PC con Windows. Así de simple.**
 
+[![Descargar Windows](https://img.shields.io/badge/Windows-Descargar%20instalador-7C3AED?logo=windows&logoColor=white)](https://github.com/Red-Orion-Studio/magicpaste/releases/latest/download/MagicPaste-Setup-v0.1.0-beta.exe)
+[![Descargar Android](https://img.shields.io/badge/Android-Descargar%20APK-7C3AED?logo=android&logoColor=white)](https://github.com/Red-Orion-Studio/magicpaste/releases/latest/download/app-release.apk)
+
 MagicPaste detecta automáticamente las capturas de pantalla nuevas en tu teléfono Android y las
 envía directo al portapapeles de tu PC a través de tu WiFi local. Sin cuentas, sin
 internet, sin nube — completamente local y de código abierto.
